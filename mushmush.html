@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="mush.PNG" type="image/x-icon">
+    <title>💛</title>
+    <style>
+        body {
+            overflow: hidden;
+            margin: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            position: relative;
+            width: 90vw;
+            height: 90vw;
+            max-width: 600px;
+            max-height: 600px;
+        }
+        .background {
+            position: absolute;
+            width: 33%;
+            height: 33%;
+            background-image: url('AI.png');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            top: 50%;
+            left: calc(50% - 2%);
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+        .mushroom {
+            position: absolute;
+            width: 5%;
+            height: 5%;
+            background-image: url('mush.PNG');
+            background-size: cover;
+            opacity: 0;
+            animation: fall 3s forwards;
+            animation-fill-mode: forwards;
+            z-index: 1;
+        }
+        @keyframes fall {
+            0% {
+                transform: translateY(-100vh);
+                opacity: 0;
+            }
+            70% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 100vw;
+                height: 100vw;
+            }
+            .background {
+                width: 35%;
+                height: 35%;
+            }
+            .mushroom {
+                width: 6%;
+                height: 6%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="heartContainer">
+        <div class="background"></div>
+        
+        <div class="mushroom" style="left: 43%; top: 35%; animation-delay: 1.04118s;"></div>
+        <div class="mushroom" style="left: 38%; top: 30%; animation-delay: 0.0543459s;"></div>
+        <div class="mushroom" style="left: 33%; top: 32%; animation-delay: 1.23989s;"></div>
+        <div class="mushroom" style="left: 28%; top: 27%; animation-delay: 1.86372s;"></div>
+        <div class="mushroom" style="left: 23%; top: 32%; animation-delay: 0.29743s;"></div>
+        <div class="mushroom" style="left: 18%; top: 37%; animation-delay: 0.928893s;"></div>
+        <div class="mushroom" style="left: 13%; top: 42%; animation-delay: 1.14174s;"></div>
+        <div class="mushroom" style="left: 18%; top: 47%; animation-delay: 1.85466s;"></div>
+        <div class="mushroom" style="left: 23%; top: 52%; animation-delay: 0.146275s;"></div>
+        <div class="mushroom" style="left: 28%; top: 57%; animation-delay: 0.137862s;"></div>
+        <div class="mushroom" style="left: 33%; top: 63%; animation-delay: 1.53284s;"></div>
+        <div class="mushroom" style="left: 38%; top: 67%; animation-delay: 1.00773s;"></div>
+        <div class="mushroom" style="left: 43%; top: 72%; animation-delay: 0.971106s;"></div>
+        <div class="mushroom" style="left: 48%; top: 67%; animation-delay: 1.03205s;"></div>
+        <div class="mushroom" style="left: 53%; top: 62%; animation-delay: 0.145397s;"></div>
+        <div class="mushroom" style="left: 58%; top: 57%; animation-delay: 1.87471s;"></div>
+        <div class="mushroom" style="left: 63%; top: 52%; animation-delay: 0.181236s;"></div>
+        <div class="mushroom" style="left: 68%; top: 47%; animation-delay: 0.114366s;"></div>
+        <div class="mushroom" style="left: 73%; top: 42%; animation-delay: 1.691s;"></div>
+        <div class="mushroom" style="left: 68%; top: 37%; animation-delay: 0.108256s;"></div>
+        <div class="mushroom" style="left: 63%; top: 32%; animation-delay: 0.0858392s;"></div>
+        <div class="mushroom" style="left: 58%; top: 27%; animation-delay: 0.788747s;"></div>
+        <div class="mushroom" style="left: 53%; top: 32%; animation-delay: 1.26933s;"></div>
+        <div class="mushroom" style="left: 48%; top: 30%; animation-delay: 0.80481s;"></div>
+    </div>
+</body>
+</html>
